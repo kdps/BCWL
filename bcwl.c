@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
   */
   
   bzero(&destination, sizeof(destination)); // Refill to sockaddr_in(AF_INET) structor
-  destination.sin_family = AF_INET; // Address system (short)
-  destination.sin_port = htons(PORT_FTP); // <- convert to network bytes order / 16 bit port number
+  destination.sin_family = AF_INET;         // Address system (short)
+  destination.sin_port = htons(PORT_FTP);   // <- convert to network bytes order / 16 bit port number
   
 }
